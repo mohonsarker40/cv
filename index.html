@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Mohon Sarker - CV</title>
+  <meta name="description" content="CV of Md. Mohon Sarker - Full Stack Developer skilled in Laravel, Vue.js, PHP, JavaScript, MySQL." />
+  <meta name="author" content="Md. Mohon Sarker" />
+  <title>Md. Mohon Sarker - Full Stack Developer CV</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @media print {
@@ -22,9 +24,9 @@
 
     <h1 class="text-2xl font-bold mb-1">Md. Mohon Sarker</h1>
     <p>Email: morshedmohon4@gmail.com</p>
-    <p>Portfolio: https://mohonsarker40.github.io/</p>
-    <p>LinkedIn: https://www.linkedin.com/in/mohon-sarker4/</p>
-    <p>GitHub: https://github.com/mohonsarker40</p>
+    <p>Portfolio: <a href="https://mohonsarker40.github.io/" class="text-blue-600">https://mohonsarker40.github.io/</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohon-sarker4/" class="text-blue-600">https://www.linkedin.com/in/mohon-sarker4/</a></p>
+    <p>GitHub: <a href="https://github.com/mohonsarker40" class="text-blue-600">https://github.com/mohonsarker40</a></p>
     <p>Phone: 01734-041004</p>
 
     <h2 class="text-lg font-semibold mt-4 border-b">Career Objective</h2>
@@ -40,22 +42,21 @@
     </ul>
 
     <h2 class="text-lg font-semibold mt-4 border-b">Experience</h2>
-<p><strong>TMSS ICT LIMITED</strong> - Intern Developer (November 2024 - Present)</p>
-<ul class="list-disc ml-5">
-  <li><strong>Pundra University</strong> (Education Software) – Vue 3, Laravel, MySQL</li>
-  <li><strong>Mikrof V4</strong> – Vue 3, Laravel, MySQL</li>
-  <li><strong>Mikrof Digitization</strong> – Vue 3, Laravel, MySQL</li>
-  <li><strong>Health Assessment System</strong> – Vue 2, Laravel, MySQL</li>
-</ul>
+    <p><strong>TMSS ICT LIMITED</strong> - Intern Developer (November 2024 - Present)</p>
+    <ul class="list-disc ml-5">
+      <li><strong>Pundra University</strong> (Education Software) – Vue 3, Laravel, MySQL</li>
+      <li><strong>Mikrof V4</strong> – Vue 3, Laravel, MySQL</li>
+      <li><strong>Mikrof Digitization</strong> – Vue 3, Laravel, MySQL</li>
+      <li><strong>Health Assessment System</strong> – Vue 2, Laravel, MySQL</li>
+    </ul>
 
-<p class="mt-3"><strong>TMSS ICT LIMITED</strong> - Industrial Training (July 2024 - October 2024)</p>
-<ul class="list-disc ml-5">
-  <li><strong>Job Portal</strong> – <a href="https://github.com/TeamProjcet/Job_Portal.git" class="text-blue-600">GitHub Repo</a></li>
-  <li><strong>E-commerce System</strong> – <a href="https://github.com/mohonsarker40/Ecommerce-SPA" class="text-blue-600">GitHub Repo</a></li>
-  <li><strong>Newspaper Management</strong> – <a href="https://github.com/mohonsarker40/Rangpur-News-Newspaper" class="text-blue-600">GitHub Repo</a></li>
-  <li><strong>School Management</strong> (In Progress) – <a href="https://github.com/mohonsarker40/school_management" class="text-blue-600">GitHub Repo</a></li>
-</ul>
-
+    <p class="mt-3"><strong>TMSS ICT LIMITED</strong> - Industrial Training (July 2024 - October 2024)</p>
+    <ul class="list-disc ml-5">
+      <li><strong>Job Portal</strong> – <a href="https://github.com/TeamProject/Job_Portal.git" class="text-blue-600">GitHub Repo</a></li>
+      <li><strong>E-commerce System</strong> – <a href="https://github.com/mohonsarker40/Ecommerce-SPA" class="text-blue-600">GitHub Repo</a></li>
+      <li><strong>Newspaper Management</strong> – <a href="https://github.com/mohonsarker40/Rangpur-News-Newspaper" class="text-blue-600">GitHub Repo</a></li>
+      <li><strong>School Management</strong> – <a href="https://github.com/mohonsarker40/school_management" class="text-blue-600">GitHub Repo</a></li>
+    </ul>
 
     <h2 class="text-lg font-semibold mt-4 border-b">Education</h2>
     <table class="table-auto w-full text-sm">
@@ -86,29 +87,28 @@
       </tbody>
     </table>
 
-    <!-- <h2 class="text-lg font-semibold mt-4 border-b">Language Proficiency</h2>
-    <ul class="list-disc ml-5">
-      <li>English - Reading: Excellent, Writing: Good, Listening: Good, Speaking: Good</li>
-    </ul> -->
-
     <h2 class="text-lg font-semibold mt-4 border-b">Personal Details</h2>
     <ul class="list-disc ml-5">
       <li>Full Name: Md. Mohon Sarker</li>
       <li>Father’s Name: Md Siddik Sarker</li>
       <li>Mother’s Name: Miss Moriom Begum</li>
       <li>Date of Birth: September 05, 2003</li>
-      <li>National ID: 9170362538</li>
       <li>Religion: Islam</li>
       <li>Blood Group: O+</li>
       <li>Present Address: West Kazipara, Mirpur 10, Dhaka-1216</li>
       <li>Permanent Address: Podumshahar, Shaghata, Gaibandha</li>
     </ul>
 
-    <!-- <h2 class="text-lg font-semibold mt-4 border-b">Interests</h2>
-    <p>Learning programming, reading books, traveling.</p> -->
-
     <p class="mt-6 italic">Md. Mohon Sarker</p>
-    <p>Date: </p>
+    <p>Date: <span id="printDate"></span></p>
+<script>
+  const date = new Date();
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const year = date.getFullYear();
+  document.getElementById('printDate').textContent = `${day}/${month}/${year}`;
+</script>
+
   </div>
 </body>
 </html>
