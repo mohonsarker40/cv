@@ -8,11 +8,28 @@
   <title>Md. Mohon Sarker - Full Stack Developer CV</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @media print {
-      .no-print {
-        display: none;
-      }
+     @media print {
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-size: 10px; /* লেখার সাইজ ছোট করা */
+      line-height: 1.2; /* লাইনের ফাঁক কমানো */
     }
+
+    body {
+      zoom: 1.2; /* সবকিছু ছোট করে স্কেল করা */
+    }
+
+    .no-print {
+      display: none !important;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  }
   </style>
 </head>
 <body class="bg-white text-black font-sans">
@@ -34,10 +51,10 @@
 
     <h2 class="text-lg font-semibold mt-4 border-b pb-2">Programming Skills</h2>
     <ul class="list-disc ml-5 text-base">
-      <li>Languages: PHP, JavaScript, HTML, CSS</li>
+      <li>Languages: PHP, JavaScript</li>
       <li>Frameworks: Laravel, Vue.js, Bootstrap, Tailwind</li>
       <li>Database: MySQL</li>
-      <li>Tools: PhpStorm, VSCode, Git</li>
+      <li>Tools: PhpStorm, VSCode, WebStorm, Git</li>
       <li>Operating Systems: Linux (Ubuntu), Windows</li>
     </ul>
 
